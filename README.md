@@ -1,2 +1,3 @@
 # Megahack2024
-megahack at VCU 2024
+Megahack at VCU 2024
+Smart Health Challenge 1
