@@ -1,5 +1,4 @@
 import React from 'react';
-import './LoginForm.css';
 import { FaPills } from "react-icons/fa6";
 
 const LoginForm = () => {
