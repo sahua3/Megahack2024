@@ -1,7 +1,14 @@
+import java.util.ArrayList;
 import java.util.Calendar;
 
 public class main{
-    public static void main(String args[]){
-        System.out.println(getTime());
+
+    ArrayList<pills> patientList;
+    public static void main(String[] args) {
+        beginMedCreation();
+    }
+
+    public static void beginMedCreation(){
+        
     }
 }
