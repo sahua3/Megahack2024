@@ -2,6 +2,7 @@ import React from 'react';
 import './LoginForm.css';
 import { FaPills } from "react-icons/fa6";
 import { FaUser, FaLock } from "react-icons/fa";
+import {Link} from "react-router-dom";
 
 const LoginForm = () => {
     return (
@@ -25,7 +26,11 @@ const LoginForm = () => {
                 <button type="submit">Login</button>
 
                     <div className="register-link">
-                        <p> Don't have an account? :3 <a href="#">Register</a></p>
+                        <p> Don't have an account? :3 <a href="#">
+                            <Button>
+                                <Link to="megahack2024/src/components/Admin/Admin.jsx">Register</Link>
+                            </Button>
+                        </a></p>
                 </div>
             </form>
         </div>
