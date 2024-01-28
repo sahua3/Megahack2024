@@ -7,7 +7,7 @@ function Home(){
     const navigate = useNavigate();
 
     function handleClick (){
-        navigate("/login")
+        navigate("/List")
     }
     function adminClick (){
         navigate("/admin")
