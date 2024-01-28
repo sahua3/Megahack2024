@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 800px;
-  background-color: palevioletred;
+  min-height: 100vh;
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url('./components/assets/megahackbackground.png') no-repeat;
 }
 
 code {
