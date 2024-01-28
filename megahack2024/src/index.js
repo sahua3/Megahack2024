@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from './components/Login/Login';
 import Dashboard from './components/Dashboard/Dashboard'; 
 import Test from './components/Test/Test'; 
+import PatientInfo from './components/PatientInfo/PatientInfo'; 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,6 +19,7 @@ root.render(
         <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/test" element={<Test />} />
+        <Route path="/patientinfo" element={<PatientInfo />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

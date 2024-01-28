@@ -1,6 +1,6 @@
 .wrapper {
   width: 420px;
-  background: green;
+  background: rgb(99, 98, 113);
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   backdrop-filter: blur(30px);
   color:white;
