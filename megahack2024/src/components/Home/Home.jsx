@@ -9,12 +9,18 @@ function Home(){
     function handleClick (){
         navigate("/login")
     }
+    function adminClick (){
+        navigate("/admin")
+    }
     return (
         <div className='wrapper'>
             <form action="">
-                <h1>Home Screen</h1>
+                <h1>Megahack Home</h1>
                 <div className="buttons">
-                    <button onClick={(e)=>handleClick()}>Login</button>
+                    <button onClick={(e)=>handleClick()}>Doctor Login</button>
+                </div>
+                <div className="AdminButton">
+                <button onClick={(e)=>adminClick()}>Admin Redirect</button>
                 </div>
             </form>
         </div>

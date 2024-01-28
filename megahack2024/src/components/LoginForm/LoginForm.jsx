@@ -2,9 +2,11 @@ import React from 'react';
 import './LoginForm.css';
 import { FaPills } from "react-icons/fa6";
 import { FaUser, FaLock } from "react-icons/fa";
-import {Link} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
+
 
 const LoginForm = () => {
+    const navigate = useNavigate();
     return (
         <div className='wrapper'>
             <form action="">
@@ -20,13 +22,13 @@ const LoginForm = () => {
                 </div>
 
                 <div className="remember-forgot">
-                    <label><input type="checkbox" />Remember me pwease  </label>
+                    <label><input type="checkbox" />Remember me  </label>
                     <a href="#">Forgot password?</a>
                 </div>
-                <button type="submit">Login</button>
+                <button type="submit" onClick={(e)=>navigate("/")}>Login</button>
 
                     <div className="register-link">
-                        <p> Don't have an account? :3 <a href="#">Register</a></p>
+                        <p> Don't have an account? Contact your administrator</p>
                 </div>
             </form>
         </div>

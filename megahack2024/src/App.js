@@ -1,8 +1,8 @@
 import React from 'react';
 import LoginForm from './components/LoginForm/LoginForm';
-import Admin from './components/Admin/Admin';
 import Home from './components/Home/Home';
 import { Route, Routes } from "react-router-dom";
+import Admin from './components/Admin/Admin';
 
 
 function App() {
