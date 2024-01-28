@@ -1,14 +1,14 @@
 import React from 'react';
+import './LoginForm.css';
 import { FaPills } from "react-icons/fa6";
 
 const LoginForm = () => {
     return (
         <div className='wrapper'>
             <form action="">
-                <h1>Login</h1>
+                <h1>Login <FaPills /> </h1>
                 <div className="input-box">
                     <input type="text" placeholder='Username' required />
-                    <FaPills />
                 </div>
                 <div className="input-box">
                     <input type="password" placeholder='Password' required />
