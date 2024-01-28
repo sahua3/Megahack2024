@@ -25,7 +25,7 @@ const LoginForm = () => {
                     <label><input type="checkbox" />Remember me  </label>
                     <a href="#">Forgot password?</a>
                 </div>
-                <button type="submit" onClick={(e)=>navigate("/")}>Login</button>
+                <button type="submit" onClick={(e)=>navigate("/dashboard")}>Login</button>
 
                     <div className="register-link">
                         <p> Don't have an account? Contact your administrator</p>
