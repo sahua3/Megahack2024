@@ -16,8 +16,8 @@ const Dashboard = () => {
         navigate("/")
     } else {
         return (
-            <div className='all'>
-                <box></box>
+            <div className='wrapper'>
+                <h1>Welcome to your Dashboard, megahacker!</h1>
             </div>
         );
     }

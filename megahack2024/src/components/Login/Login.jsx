@@ -3,11 +3,14 @@ import { useState } from 'react';
 import './Login.css';
 import { FaUser, FaLock } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
+import ErrorPopup from '../ErrorPopup/ErrorPopup';
+
 
 const Login = () => {
     const navigate = useNavigate();
     const [username, setusername] = useState("");
     const [password, setpassword] = useState("");
+    const [showErrorPopup, setShowErrorPopup] = useState(false);
     const [authenticated, setauthenticated] = useState(localStorage.getItem ("authenticated")|| false);
     const users = [{ username: "r", password: "r"}];
     const handleSubmit = (e) => {
@@ -16,8 +19,15 @@ const Login = () => {
         if (account && account.password === password) {
             localStorage.setItem("authenticated", true);
             navigate("/dashboard"); 
-        }
+        } else {
+            setShowErrorPopup(true);
+        }        
     };
+
+    const closeErrorPopup = () => {
+        setShowErrorPopup(false);
+    };
+
     return (
         <div className='wrapper'>
             <form action="">
@@ -39,6 +49,11 @@ const Login = () => {
                 
                 <button type="submit" onClick={handleSubmit}>Login</button>
             </form>
+
+            {showErrorPopup && (
+                <ErrorPopup message='Invalid username or password.' onClose={closeErrorPopup} />
+            )}
+            
         </div>
     );
 }
