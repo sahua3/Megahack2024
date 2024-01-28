@@ -1,5 +1,21 @@
 .topWrap {
-    width: 450px;
+    height: auto;
+    min-height: 100%;
+    background: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+.topWrap .dashboardWrap {
+    height: auto;
+    min-height: 100%;
     background: white;
-    color: #000;
+    margin: 10px;
+    padding: 10px;
+}
+.dashboardWrap h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 4rem;
 }

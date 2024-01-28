@@ -1,21 +1,26 @@
 import React from 'react';
 import './Dashboard.css';
-import ReactDOM from 'react-dom/client';
-
-function patientPrint(value){
-    return <li>{value.name}</li>;
-}
+import { Link } from "react-router-dom";
 
 function Dashboard() {
-    const randomPeople = [{id: 1, name: 'Chipi cat'}, {id: 2, name: 'Markiplier'}, {id: 3, name: 'Devin :3'}];
     return(
-        <div className='topWrap'>
-            <h1>Welcome to your dashboard.</h1>
-            <ul>{randomPeople.map((person) => <patientPrint key={person.id} name={person.name}/>)}</ul>
-        </div>
+        <><div className='topWrap'>
+            <form action="">
+                <div className="dashboardWrap">
+                    <h1>Welcome to your dashboard.</h1>
+                    <br />
+                </div>
+            <div className="peopleList">
+                <input type="text" placeholder='Search for patients'/>
+                <h2>List of patients</h2>
+                <p> chipi cat </p> 
+                <Link to="/login">edit</Link>
+                <p> Markiplier </p> <a href="#"> edit</a>
+                <p> Devin :3 </p> <a href="#"> edit</a>
+            </div>
+            </form>
+        </div></>
     );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Dashboard />);
 export default Dashboard;
